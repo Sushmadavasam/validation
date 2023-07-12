@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1> STUDENT VALIDATION FORMS</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{sfo.as_p}}
+        <input type="submit" value="Submit the data">
+    </form>
+    </center>
+    
+
+
+</body>
+</html>
